@@ -134,7 +134,7 @@ div.background p {
 div.hero-background-pos {
     position: absolute;
     right: 0px;
-    left: 66%;
+    left: 72%;
     background: #fff;
     width: 140px;
     height: 140px;
@@ -164,6 +164,7 @@ div.snapshot-team p {
 
 div.snapshot-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
@@ -172,7 +173,10 @@ div.snapshot-box {
 
 div.snapshot-box-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 div.box1 {
@@ -365,6 +369,23 @@ div.footer h6 {
         padding: 8rem;
     }
 
+    div.hero-background {
+        padding: 7rem;
+    }
+
+    div.background {
+        padding: 15px 40px;
+        width: 500px;
+        height: 200px;
+        position: relative;
+    }
+    
+    div.background h4 {
+        padding: 1rem;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+
     div.background p {
         padding-left: 1rem;
         font-size: 0.7rem;
@@ -407,8 +428,7 @@ div.footer h6 {
     div.circle {
         width: 80px;
         height: 80px;
-        margin-top: 1.8rem;
-        
+        margin-top: 1.8rem;   
     }
     
     div.box1 h5 {
@@ -490,8 +510,6 @@ div.footer h6 {
     }
     
     div.background {
-        background: #fff;
-        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
         padding: 15px 40px;
         width: 500px;
         height: 200px;
@@ -500,7 +518,6 @@ div.footer h6 {
     
     div.background h4 {
         padding: 1rem;
-        color: #555657;
         font-size: 0.9rem;
         letter-spacing: 2px;
     }
@@ -595,4 +612,181 @@ div.footer h6 {
     }
 }
     
+@media (max-width: 484px) {
+    div.nav-bar {
+        display: flex;
+        overflow: hidden;
+    }
+
+    #links {
+        display: none;
+    }
+
+    div.hero-section {
+        padding: 5rem;
+    }
+
+    div.hero-content-heading h3 {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+    }
     
+    div.hero-content-heading p {
+        padding-top: 0.5rem;
+        font-size: 0.6rem;
+        letter-spacing: 1.5px;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 0.7rem;
+    }
+    
+    div.hero-background {
+        padding: 1.2rem;
+    }
+    
+    div.background {
+        padding: 15px 40px;
+        width: 270px;
+        height: 175px;
+        position: relative;
+    }
+    
+    div.background h4 {
+        padding: 0.8rem;
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    div.background p {
+        padding-left: 0.8rem;
+        font-size: 0.6rem;
+        letter-spacing: 1.1px;
+    }
+    
+    div.hero-background-pos {
+        left: 69%;
+        width: 110px;
+        height: 110px;
+    }
+
+    div.snapshot-team h2{
+        font-size: 0.8rem;
+    }
+
+    div.snapshot-team p{
+        font-size: 0.6rem;
+    }
+
+    div.snapshot-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem 4rem;
+    }
+    
+    div.box1 {
+        width: 170px;
+        height: 190px;
+    }
+    
+    div.box3 {
+        width: 170px;
+        height: 190px;
+    }
+    
+    div.box3 h5 {
+        padding-top: 1.6rem;
+        font-size: 0.7rem;
+    }
+    
+    div.circle {
+        width: 70px;
+        height: 70px;
+        margin-top: 1.6rem;
+    }
+    
+    div.box1 h5 {
+        padding-top: 1.6rem;
+        font-size: 0.7rem;
+    }
+
+    div.gallery-section {
+        padding: 2rem;
+    }
+    
+    div.gallery-content h4 {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+    
+    div.gallery-content p {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+        padding-top: 0.4rem;
+    }
+
+    div.footer-content h4 {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+    
+    div.footer-content p {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+        padding-top: 0.5rem;
+    }
+
+    div.footer-input {
+        padding-top: 1.2rem;
+    }
+
+    input[type="text"] {
+        margin-right: 10px;
+        padding: 10px 20px;
+        width: 50%;
+        outline: none;
+        font-size: 0.8rem;
+    }
+    
+    input[type="email"] {
+        margin-right: 10px;
+        padding: 10px 20px;
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    
+    div.footer-textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    textarea {
+        width: 75%;
+        height: 150px;
+        padding: 0.5rem;
+    }
+    
+    div.footer-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.2rem;
+    }
+    
+    div.footer-btn a {
+        font-size: 0.7rem;
+        padding: 8px 40px;
+        letter-spacing: 1.5px;
+    }
+-+
+    div.footer-textarea {
+        padding-top: 0.8rem;
+    }
+
+    div.footer h6 {
+        font-size: 0.6rem;
+        padding-top: 2rem;
+    }
+}    
